@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>宜蘭縣觀光景點
+      <meta property="og:title" content="宜蘭縣觀光景點"/>
+      <meta property="og:description" content="選擇類別為你決定遊玩去處"/>
+      <meta property="og:image" content="https://images.unsplash.com/photo-1551668704-a75c2cb614f3?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=2100&amp;q=80"/>
+      <meta property="og:type" content="website"/>
+    </title>
+    <link rel="stylesheet" href="./css/all.css"/>
+    <script src="./js/vendors.js"></script>
+  </head>
+  <body>
+    <section>
+      <div class="jumbotron text-center bg-cover d-flex align-items-center" style="background-image:url('https://images.unsplash.com/photo-1551668704-a75c2cb614f3?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=2100&amp;q=80');min-height:500px">
+        <div class="container bg-shadow py-5">
+          <h1 class="display-4">宜蘭觀光景點</h1>
+          <p class="lead">選擇類別為你決定遊玩去處</p>
+          <div class="form-group d-flex justify-content-center mt-4">
+            <label for="type"></label>
+            <select class="form-control w-50" id="type"></select>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="h-50 d-flex justify-content-center">
+      <div class="container">
+        <div id="map"></div>
+      </div>
+    </section>
+    <section class="mt-4">
+      <div class="container">
+        <div class="alert alert-info text-center" role="alert">實際情形以當地做為標準喔</div>
+        <div class="table-responsive">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>名稱</th>
+                <th>開放時間</th>
+                <th>電話</th>
+                <th>地址</th>
+                <th class="d-md-table-cell d-none">票價資訊</th>
+              </tr>
+            </thead>
+            <tbody id="info"></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+    <footer class="py-3 bg-light text-center"><span class="text-primary">資料來源：公共運輸整合資訊流通服務平臺</span></footer>
+  </body>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyACrqtiPfVFjqaZgCqz4CFXrpLA_dxXBYs&amp;callback=initMap" async="async" defer="defer"></script>
+  <script src="./js/all.js"></script>
+</html>
