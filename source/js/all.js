@@ -118,11 +118,11 @@ function initMap() {
       let marker; // 單一個值
       let markers = []; // 存所有marker
       let pos = [];
-      let str2 = '';
       let current = '';
       const info = document.querySelector('#info');
       chooseClass.addEventListener('change', changClass);
       function changClass(e) {
+        let str2 = '';
         for (let i = 0; i < markers.length; i++) {
           markers[i].setMap(null);
         }
