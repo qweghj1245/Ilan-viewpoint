@@ -97,12 +97,13 @@ function initMap() {
       var markers = []; // 存所有marker
 
       var pos = [];
-      var str2 = '';
       var current = '';
       var info = document.querySelector('#info');
       chooseClass.addEventListener('change', changClass);
 
       function changClass(e) {
+        var str2 = '';
+
         for (var i = 0; i < markers.length; i++) {
           markers[i].setMap(null);
         }
