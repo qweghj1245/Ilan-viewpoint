@@ -80,9 +80,10 @@ function initMap() {
         }
       });
       class1 = Array.from(type);
+      var str = '';
 
       function classList() {
-        var str = '';
+        str += "<option selected=\"selected value=\"\u8ACB\u9078\u64C7\">\u8ACB\u9078\u64C7\u985E\u5225</option>";
 
         for (var i = 0; i < class1.length; i++) {
           str += "<option value='".concat(class1[i], "'>").concat(class1[i], "</option>");
