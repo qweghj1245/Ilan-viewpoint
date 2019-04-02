@@ -24,18 +24,19 @@ html(lang="en")
             .container
                 #map
         section.mt-4
-            .container
-                .alert.alert-info.text-center(role='alert') 實際情形以當地做為標準喔
-                .table-responsive
-                    table.table
-                        thead
-                            tr
-                                th 名稱
-                                th 開放時間
-                                th 電話
-                                th 地址
-                                th.d-md-table-cell.d-none 票價資訊
-                        tbody#info
+            .row.d-flex.justify-content-center
+                .col-md-9
+                    .alert.alert-info.text-center(role='alert') 實際情形以當地做為標準喔
+                    .table-responsive
+                        table.table
+                            thead
+                                tr
+                                    th 名稱
+                                    th 開放時間
+                                    th 電話
+                                    th 地址
+                                    th.d-md-table-cell.d-none 票價資訊
+                            tbody#info
         footer.py-3.bg-light.text-center
             span.text-primary 資料來源：公共運輸整合資訊流通服務平臺
     script(src="https://maps.googleapis.com/maps/api/js?key=AIzaSyACrqtiPfVFjqaZgCqz4CFXrpLA_dxXBYs&callback=initMap" async defer)

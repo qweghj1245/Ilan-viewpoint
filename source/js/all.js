@@ -104,8 +104,9 @@ function initMap() {
         }
       });
       class1 = Array.from(type);
+      let str = '';
       function classList() {
-        let str = '';
+        str += `<option selected="selected value="請選擇">請選擇類別</option>`;
         for (let i = 0; i < class1.length; i++) {
           str += `<option value='${class1[i]}'>${class1[i]}</option>`;
         }
